@@ -33,10 +33,7 @@
         let b = 1;
         let c = 2;
 
-        console.log("나 함수 안에 있어!", b);
-        // 함수 외부에도 b라는 변수가 존재하지만,
-        // 함수 내부에서 b를 출력시 함수 내부의 b의 값을 따름.
-        // 나 함수 안에 있어! 1
+        console.log(b);
         console.log(d);
         // 전역 변수는 함수 안에서도 사용 가능.
 
@@ -47,8 +44,6 @@
 
       console.log(c());
       console.log(d);
-      console.log("나 함수 밖에 있어!", b);
-      // 나 함수 밖에 있어! 3
     </script>
   </body>
 </html>
