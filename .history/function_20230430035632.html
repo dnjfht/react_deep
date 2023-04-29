@@ -9,7 +9,6 @@
   <body>
     <script>
       let d = 6;
-      // 외부 변수(global 변수)
 
       console.log(a());
       // 1을 반환.
@@ -37,10 +36,6 @@
         // 함수 내에서 사용하는 변수(함수 밖에서는 사용할 수 없음)
         let b = 1;
         let c = 2;
-
-        console.log(d);
-        // 전역 변수는 함수 안에서도 사용 가능.
-
         return b + c;
       };
       // 화살표 함수.
