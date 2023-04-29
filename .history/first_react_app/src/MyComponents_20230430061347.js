@@ -4,18 +4,9 @@ import React, { useState } from "react";
 
 const One = (props) => {
   const [name, setName] = useState("mean0");
-
   return (
     <div>
       <h1>One</h1>
-      <p>{name}</p>
-      <button
-        onClick={() => {
-          setName("유승민");
-        }}
-      >
-        change!
-      </button>
     </div>
   );
 };

@@ -13,9 +13,7 @@ const One = (props) => {
         onClick={() => {
           setName("유승민");
         }}
-      >
-        change!
-      </button>
+      ></button>
     </div>
   );
 };

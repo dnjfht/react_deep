@@ -9,13 +9,6 @@ const One = (props) => {
     <div>
       <h1>One</h1>
       <p>{name}</p>
-      <button
-        onClick={() => {
-          setName("유승민");
-        }}
-      >
-        change!
-      </button>
     </div>
   );
 };
