@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      let a = 11111;
+      let b = "aaaaa";
+      let c = true;
+
+      const d = [111, "aaaaa", true];
+      // 배열 역시 object. 배열은 key를 index로 이미 가지고 있음.
+
+      let e = { a: 1, b: "b" };
+      // 객체 리터럴 방식으로 객체를 만들어준 것.
+
+      let f = new Object();
+      // 객체 생성자로 객체를 만들어준 것.
+
+      d[0] = 222;
+      console.log(d);
+      // 상수는 재할당이 안되지만, 객체에 해당하는 경우 이야기가 달라짐.
+      // 원시값의 경우 메모리가 들어갈 공간을 만든 후 거기에 할당을 하지만
+      // 객체의 경우 객체가 저장될 다른 공간을 메모리에 만든 후 그 주소를 기존에 만들어둔 메모리 공간에 할당함.
+      // 고로 객체와 배열은 주소는 바뀌지 않더라도 기존의 프로퍼티가 변경될 수 있음. const를 사용할지라도.
+    </script>
+  </body>
+</html>
