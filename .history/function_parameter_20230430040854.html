@@ -11,7 +11,7 @@
       // cat : 고양이 이름 텍스트
       // action : 뭐하고 놀 거야! 함수
       const playWithCat = (cat, action) => {
-        console.log(action(cat));
+        console.log(cat, action);
       };
 
       const useBall = (cat) => {
@@ -20,9 +20,7 @@
 
       console.log(useBall("펄이"));
       // 펄이와 공놀이하고 놀아요!
-      playWithCat("펄이", useBall);
-
-      // 콜백함수 : 함수를 값처럼 전달할 때, 인수로 넘겨주는 함수
+      playWithCat("펄이");
     </script>
   </body>
 </html>
