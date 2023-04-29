@@ -18,5 +18,5 @@ const Two = (props) => {
   );
 };
 
-export default One;
-export { Two };
+export One;
+export Two;

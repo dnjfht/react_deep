@@ -10,13 +10,4 @@ const One = (props) => {
   );
 };
 
-const Two = (props) => {
-  return (
-    <div>
-      <h1>Two</h1>
-    </div>
-  );
-};
-
 export default One;
-export { Two };

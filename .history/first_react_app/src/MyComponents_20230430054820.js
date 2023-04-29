@@ -11,12 +11,7 @@ const One = (props) => {
 };
 
 const Two = (props) => {
-  return (
-    <div>
-      <h1>Two</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default One;
-export { Two };
