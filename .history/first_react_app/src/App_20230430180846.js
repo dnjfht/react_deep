@@ -28,34 +28,20 @@ const Title = styled.h1`
 const ContentsWrap = styled.div`
   width: 100%;
   height: 900px;
-  background-color: #a6bbe6;
 
-  margin-top: 2.4rem;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 0.4rem;
 
   overflow: scroll;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(23, 23, 23, 0.8);
-    border-radius: 6px;
-  }
 `;
 
 const Content = styled.div`
   width: calc(100% - 4rem);
-  background-color: #e0eaff;
+  background-color: lightblue;
 
   margin-bottom: 2rem;
   padding: 2rem;
@@ -95,18 +81,15 @@ const Input = styled.input`
 
   outline: none;
 
-  font-size: 1.1rem;
-  color: #888;
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 
 const AddTilButton = styled.button`
   width: 100%;
   height: 4rem;
-  background-color: #e0eaff;
+  background-color: darkcyan;
 
   margin-top: 1rem;
   padding: 1rem;
@@ -114,19 +97,11 @@ const AddTilButton = styled.button`
   border-radius: 0.2rem;
   border: none;
 
-  color: #666;
+  color: white;
 
   outline: none;
 
   cursor: pointer;
-
-  transition: all 0.5s;
-
-  &:hover {
-    background-color: #b9caea;
-
-    color: white;
-  }
 `;
 
 const initialState = [
@@ -174,15 +149,15 @@ function App() {
         <Title>TIL</Title>
 
         <ContentsWrap>
-          {til.map((t, index) => {
+          {til.map((t) => {
             return (
-              <Content key={index}>
+              <Content>
                 <h1>{t.subject}</h1>
                 <h3 style={{ fontSize: "1.5rem", fontWeight: 500 }}>
                   {t.content}
                 </h3>
                 <p
-                  style={{ fontSize: "1.5rem", fontWeight: 500, color: "#666" }}
+                  style={{ fontSize: "1.5rem", fontWeight: 500, color: "#ccc" }}
                 >
                   {t.time}
                 </p>

@@ -28,29 +28,15 @@ const Title = styled.h1`
 const ContentsWrap = styled.div`
   width: 100%;
   height: 900px;
-  background-color: #a6bbe6;
 
-  margin-top: 2.4rem;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 0.4rem;
 
   overflow: scroll;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(23, 23, 23, 0.8);
-    border-radius: 6px;
-  }
 `;
 
 const Content = styled.div`
@@ -95,11 +81,8 @@ const Input = styled.input`
 
   outline: none;
 
-  font-size: 1.1rem;
-  color: #888;
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 
@@ -120,7 +103,7 @@ const AddTilButton = styled.button`
 
   cursor: pointer;
 
-  transition: all 0.5s;
+  transition-duration: all 0.5s;
 
   &:hover {
     background-color: #b9caea;
@@ -174,9 +157,9 @@ function App() {
         <Title>TIL</Title>
 
         <ContentsWrap>
-          {til.map((t, index) => {
+          {til.map((t) => {
             return (
-              <Content key={index}>
+              <Content>
                 <h1>{t.subject}</h1>
                 <h3 style={{ fontSize: "1.5rem", fontWeight: 500 }}>
                   {t.content}

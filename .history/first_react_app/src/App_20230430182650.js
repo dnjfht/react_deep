@@ -96,10 +96,9 @@ const Input = styled.input`
   outline: none;
 
   font-size: 1.1rem;
-  color: #888;
+
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 

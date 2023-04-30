@@ -30,27 +30,14 @@ const ContentsWrap = styled.div`
   height: 900px;
   background-color: #a6bbe6;
 
-  margin-top: 2.4rem;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 0.4rem;
 
   overflow: scroll;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(23, 23, 23, 0.8);
-    border-radius: 6px;
-  }
 `;
 
 const Content = styled.div`
@@ -95,11 +82,8 @@ const Input = styled.input`
 
   outline: none;
 
-  font-size: 1.1rem;
-  color: #888;
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 

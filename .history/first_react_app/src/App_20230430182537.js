@@ -30,10 +30,9 @@ const ContentsWrap = styled.div`
   height: 900px;
   background-color: #a6bbe6;
 
-  margin-top: 2.4rem;
+  margin-top: 1rem;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 0.4rem;
 
   overflow: scroll;
 
@@ -95,11 +94,8 @@ const Input = styled.input`
 
   outline: none;
 
-  font-size: 1.1rem;
-  color: #888;
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 

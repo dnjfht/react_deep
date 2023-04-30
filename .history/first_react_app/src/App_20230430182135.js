@@ -30,10 +30,8 @@ const ContentsWrap = styled.div`
   height: 900px;
   background-color: #a6bbe6;
 
-  margin-top: 2.4rem;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 0.4rem;
 
   overflow: scroll;
 
@@ -95,11 +93,8 @@ const Input = styled.input`
 
   outline: none;
 
-  font-size: 1.1rem;
-  color: #888;
   &::placeholder {
     color: #ccc;
-    font-size: 1rem;
   }
 `;
 
@@ -120,7 +115,7 @@ const AddTilButton = styled.button`
 
   cursor: pointer;
 
-  transition: all 0.5s;
+  transition-duration: all 0.5s;
 
   &:hover {
     background-color: #b9caea;
