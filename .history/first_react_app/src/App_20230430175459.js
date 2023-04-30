@@ -14,6 +14,7 @@ const Wrap = styled.div`
 const TilContent = styled.div`
   width: 80%;
   height: 100%;
+  background-color: darkviolet;
 
   padding: 4rem 8rem;
   box-sizing: border-box;
@@ -25,27 +26,10 @@ const Title = styled.h1`
   font-size: 4rem;
 `;
 
-const ContentsWrap = styled.div`
+const ContentWrap = styled.div`
   width: 100%;
-  height: 900px;
-
-  padding: 2rem;
-  box-sizing: border-box;
-
-  overflow: scroll;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Content = styled.div`
-  width: calc(100% - 4rem);
-  background-color: lightblue;
-
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 0.6rem;
+  height: 600px;
+  background-color: gold;
 `;
 
 const TilInputWrap = styled.div`
@@ -148,17 +132,7 @@ function App() {
       <TilContent>
         <Title>TIL</Title>
 
-        <ContentsWrap>
-          {til.map((t) => {
-            return (
-              <Content>
-                <h1>{t.subject}</h1>
-                <h3>{t.content}</h3>
-                <p>{t.time}</p>
-              </Content>
-            );
-          })}
-        </ContentsWrap>
+        <ContentWrap></ContentWrap>
       </TilContent>
 
       <TilInputWrap>

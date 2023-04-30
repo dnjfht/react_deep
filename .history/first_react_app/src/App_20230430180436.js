@@ -40,12 +40,13 @@ const ContentsWrap = styled.div`
 `;
 
 const Content = styled.div`
-  width: calc(100% - 4rem);
+  width: 100%;
+  height: 10rem;
   background-color: lightblue;
 
   margin-bottom: 2rem;
   padding: 2rem;
-  border-radius: 0.6rem;
+  box-sizing: border-box;
 `;
 
 const TilInputWrap = styled.div`

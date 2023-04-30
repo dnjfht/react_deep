@@ -45,7 +45,6 @@ const Content = styled.div`
 
   margin-bottom: 2rem;
   padding: 2rem;
-  border-radius: 0.6rem;
 `;
 
 const TilInputWrap = styled.div`

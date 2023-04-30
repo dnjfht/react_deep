@@ -14,6 +14,7 @@ const Wrap = styled.div`
 const TilContent = styled.div`
   width: 80%;
   height: 100%;
+  background-color: darkviolet;
 
   padding: 4rem 8rem;
   box-sizing: border-box;
@@ -23,29 +24,6 @@ const Title = styled.h1`
   margin: 0;
 
   font-size: 4rem;
-`;
-
-const ContentsWrap = styled.div`
-  width: 100%;
-  height: 900px;
-
-  padding: 2rem;
-  box-sizing: border-box;
-
-  overflow: scroll;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Content = styled.div`
-  width: calc(100% - 4rem);
-  background-color: lightblue;
-
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 0.6rem;
 `;
 
 const TilInputWrap = styled.div`
@@ -104,61 +82,19 @@ const AddTilButton = styled.button`
   cursor: pointer;
 `;
 
-const initialState = [
-  {
-    subject: "React",
-    content:
-      "오늘은 웹팩과 바벨 가지고 프로젝트를 세팅해봤다! 혼자 하기 끄으읏 -!(사실 난 안했어)",
-    time: "05 : 20",
-  },
-  {
-    subject: "React",
-    content: "다시 React 심화 과정으로 갈아 엎는 중...",
-    time: "01 : 50",
-  },
-];
-
 function App() {
-  const [til, setTil] = useState(initialState);
+  const [subject, setSubject] = useState("");
+  const [content, setContent] = useState("");
+  const [time, setTime] = useState("");
 
   const subjectInputRef = useRef(null);
   const contentInputRef = useRef(null);
   const timeInputRef = useRef(null);
 
-  const handleAddTil = (event) => {
-    event.preventDefault();
-
-    const newTilContent = {
-      subject: subjectInputRef.current.value,
-      content: contentInputRef.current.value,
-      time: timeInputRef.current.value,
-    };
-
-    setTil((prev) => [...prev, newTilContent]);
-
-    subjectInputRef.current.value = "";
-    contentInputRef.current.value = "";
-    timeInputRef.current.value = "";
-  };
-
-  console.log(til);
-
   return (
     <Wrap>
       <TilContent>
         <Title>TIL</Title>
-
-        <ContentsWrap>
-          {til.map((t) => {
-            return (
-              <Content>
-                <h1>{t.subject}</h1>
-                <h3>{t.content}</h3>
-                <p>{t.time}</p>
-              </Content>
-            );
-          })}
-        </ContentsWrap>
       </TilContent>
 
       <TilInputWrap>
@@ -192,7 +128,7 @@ function App() {
           />
         </PersonalInputWrap>
 
-        <AddTilButton onClick={handleAddTil}>추가하기</AddTilButton>
+        <AddTilButton>추가하기</AddTilButton>
       </TilInputWrap>
     </Wrap>
   );
