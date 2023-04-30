@@ -1,11 +1,7 @@
 import One, { Two } from "./MyComponents";
 import styled from "styled-components";
 
-const Wrap = styled.div`
-  width: 100%;
-
-  text-align: center;
-`;
+const Wrap = styled.div``;
 
 const App = () => {
   return (
