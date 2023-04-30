@@ -63,24 +63,6 @@ const Input = styled.input`
   }
 `;
 
-const AddTilButton = styled.button`
-  width: 100%;
-  height: 4rem;
-  background-color: darkcyan;
-
-  margin-top: 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-radius: 0.2rem;
-  border: none;
-
-  color: white;
-
-  outline: none;
-
-  cursor: pointer;
-`;
-
 function App() {
   return (
     <Wrap>
@@ -103,8 +85,6 @@ function App() {
           <InputName htmlFor="time">공부시간 : </InputName>
           <Input id="time" type="text" placeholder="study-time" />
         </PersonalInputWrap>
-
-        <AddTilButton>추가하기</AddTilButton>
       </TilInputWrap>
     </Wrap>
   );

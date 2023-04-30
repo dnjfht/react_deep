@@ -67,8 +67,8 @@ const AddTilButton = styled.button`
   width: 100%;
   height: 4rem;
   background-color: darkcyan;
-
   margin-top: 1rem;
+
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 0.2rem;

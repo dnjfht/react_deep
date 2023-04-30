@@ -28,6 +28,7 @@ const Title = styled.h1`
 const TilInputWrap = styled.div`
   width: 20%;
   height: 100%;
+  background-color: coral;
 
   padding: 3rem 2rem;
   box-sizing: border-box;
@@ -38,47 +39,18 @@ const TilInputWrap = styled.div`
 
 const PersonalInputWrap = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
+  background-color: aquamarine;
 
   display: flex;
-  flex-direction: row;
-  align-items: center;
 `;
 
 const InputName = styled.label`
-  margin-right: 1rem;
-
   font-size: 1.4rem;
   font-weight: 600;
 `;
 
 const Input = styled.input`
-  width: 16rem;
-  padding: 1rem;
-
-  outline: none;
-
-  &::placeholder {
-    color: #ccc;
-  }
-`;
-
-const AddTilButton = styled.button`
-  width: 100%;
-  height: 4rem;
-  background-color: darkcyan;
-
-  margin-top: 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-radius: 0.2rem;
-  border: none;
-
-  color: white;
-
-  outline: none;
-
-  cursor: pointer;
+  width: 20rem;
 `;
 
 function App() {
@@ -90,21 +62,19 @@ function App() {
 
       <TilInputWrap>
         <PersonalInputWrap>
-          <InputName htmlFor="subject">과목 : </InputName>
+          <InputName htmlFor="subject">과목</InputName>
           <Input id="subject" type="text" placeholder="subject" />
         </PersonalInputWrap>
 
         <PersonalInputWrap>
-          <InputName htmlFor="content">내용 : </InputName>
+          <InputName htmlFor="content">내용</InputName>
           <Input id="content" type="text" placeholder="contents" />
         </PersonalInputWrap>
 
         <PersonalInputWrap>
-          <InputName htmlFor="time">공부시간 : </InputName>
+          <InputName htmlFor="time">공부시간</InputName>
           <Input id="time" type="text" placeholder="study-time" />
         </PersonalInputWrap>
-
-        <AddTilButton>추가하기</AddTilButton>
       </TilInputWrap>
     </Wrap>
   );

@@ -66,15 +66,10 @@ const Input = styled.input`
 const AddTilButton = styled.button`
   width: 100%;
   height: 4rem;
-  background-color: darkcyan;
-
-  margin-top: 1rem;
+  background-color: darkgoldenrod;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 0.2rem;
-  border: none;
-
-  color: white;
 
   outline: none;
 
