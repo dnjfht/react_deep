@@ -11,17 +11,13 @@ export const useCompletes = (initial = "") => {
 
   const [text, setText] = useState(initial);
 
+  const value = _ref.current?.value;
+  // 옵셔널 체이닝
+  // value가 있으면 가져오고 없으면 error message 출력.
+
   const changeText = (_ref) => {
-    // const value = _ref.current?.value;
-    // 옵셔널 체이닝 (?.)
-    // value가 있으면 가져오고 없으면 error message 출력.
-
-    const value = _ref.current ? _ref.current.value : "";
-
-    if (value && value != "") {
-      setText(value);
-      _ref.current.value = "";
-    }
+    setText(_ref.current.value);
+    _ref.current.value = "";
   };
 
   return [text, changeText];

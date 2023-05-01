@@ -18,10 +18,8 @@ export const useCompletes = (initial = "") => {
 
     const value = _ref.current ? _ref.current.value : "";
 
-    if (value && value != "") {
-      setText(value);
-      _ref.current.value = "";
-    }
+    setText(_ref.current.value);
+    _ref.current.value = "";
   };
 
   return [text, changeText];
