@@ -28,7 +28,7 @@ const InputWrap = styled.div`
 
 function App() {
   // const [text, setText] = useState("");
-  const [text, setText] = useCompletes("");
+  const [text, setText] = useCompletes;
 
   const inputTextRef = useRef(null);
 

@@ -32,6 +32,7 @@ export default function SuccessBtn({ setText, inputTextRef }) {
     <Btn
       onClick={() => {
         setText(inputTextRef);
+        inputTextRef.current.value = "";
       }}
     >
       Success
