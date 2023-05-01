@@ -2,13 +2,7 @@ import MyComponents from "./MyComponents";
 
 function App() {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100vh",
-        textAlign: "center",
-      }}
-    >
+    <div style={{ margin: "0 auto" }}>
       <MyComponents />
     </div>
   );

@@ -6,7 +6,8 @@ function App() {
       style={{
         width: "100%",
         height: "100vh",
-        textAlign: "center",
+        margin: "0 auto",
+        backgroundColor: "yellow",
       }}
     >
       <MyComponents />

@@ -12,9 +12,7 @@ export default function MyComponents() {
         onClick={() => {
           setValue("바꿀 거야!");
         }}
-      >
-        change!
-      </button>
+      ></button>
     </div>
   );
 }
