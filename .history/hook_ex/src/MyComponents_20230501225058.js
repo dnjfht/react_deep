@@ -38,10 +38,6 @@ export default function MyComponents() {
   );
 }
 
-export function Two({ logger }) {
-  return (
-    <div>
-      <button onClick={logger}>콘솔 남기기</button>
-    </div>
-  );
+export function Two() {
+  return <div></div>;
 }

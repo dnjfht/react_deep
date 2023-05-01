@@ -18,9 +18,7 @@ export default function MyComponents() {
     };
   }, []);
 
-  const logger = useCallback(() => {
-    console.log("나 메모이제이션 된 함수야!");
-  }, []);
+  const logger = useCallback(() => {}, []);
 
   return (
     <div>
@@ -32,16 +30,10 @@ export default function MyComponents() {
       >
         change!
       </button>
-
-      <Two logger={logger} />
     </div>
   );
 }
 
-export function Two({ logger }) {
-  return (
-    <div>
-      <button onClick={logger}>콘솔 남기기</button>
-    </div>
-  );
+export function Two() {
+  return <div></div>;
 }
