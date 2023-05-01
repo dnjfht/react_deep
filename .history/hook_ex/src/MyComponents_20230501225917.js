@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export default function MyComponents() {
   const [someValue, setValue] = useState("hi");
@@ -26,8 +26,6 @@ export default function MyComponents() {
   // useRef가 반환해준 ref 객체는 똑같이 생겼지만 다른 값이라 변경이 가능함.
   // 값을 변경해도 리렌더링 X
 
-  const input_ref = useRef(null);
-
   const logger = useCallback(() => {
     console.log("나 메모이제이션 된 함수야!");
   }, []);
@@ -45,17 +43,8 @@ export default function MyComponents() {
 
       <Two logger={logger} />
 
-      <button
-        onClick={() => {
-          console.log(input_ref.current.value);
-          // current에 값을 담아줌.
-        }}
-      >
-        인풋 값 보기
-      </button>
-
       <div>
-        <input ref={input_ref} type="text" />
+        <input type="text" />
       </div>
     </div>
   );

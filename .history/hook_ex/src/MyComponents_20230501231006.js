@@ -47,7 +47,7 @@ export default function MyComponents() {
 
       <button
         onClick={() => {
-          console.log(input_ref.current.value);
+          console.log(input_ref);
           // current에 값을 담아줌.
         }}
       >

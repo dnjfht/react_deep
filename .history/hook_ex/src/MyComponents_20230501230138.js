@@ -47,8 +47,7 @@ export default function MyComponents() {
 
       <button
         onClick={() => {
-          console.log(input_ref.current.value);
-          // current에 값을 담아줌.
+          console.log(input_ref);
         }}
       >
         인풋 값 보기

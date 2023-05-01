@@ -45,15 +45,6 @@ export default function MyComponents() {
 
       <Two logger={logger} />
 
-      <button
-        onClick={() => {
-          console.log(input_ref.current.value);
-          // current에 값을 담아줌.
-        }}
-      >
-        인풋 값 보기
-      </button>
-
       <div>
         <input ref={input_ref} type="text" />
       </div>
