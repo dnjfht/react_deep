@@ -19,9 +19,7 @@ export default function MyComponents() {
   }, []);
 
   // useCallback - react hook
-  // 함수형 컴포넌트가 리렌더링되면 컴포넌트 안에 선언해둔 함수를 다시 한 번 생성하게 됨.
-  // useCallBack()은 함수를 메모이제이션해서 여러번 만들지 않게 해줌.
-
+  // 함수를 메모리제이션 하기 위한 훅.
   const logger = useCallback(() => {
     console.log("나 메모이제이션 된 함수야!");
   }, []);
