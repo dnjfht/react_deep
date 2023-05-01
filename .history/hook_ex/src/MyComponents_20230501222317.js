@@ -7,8 +7,8 @@ export default function MyComponents() {
   // state 값을 변경하면 리렌더링이 이뤄짐.
 
   useEffect(() => {
-    console.log("바꿀 거야!");
-  }, [someValue]);
+    console.log("hi");
+  }, []);
 
   return (
     <div>
