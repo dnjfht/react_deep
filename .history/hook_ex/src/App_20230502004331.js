@@ -11,8 +11,8 @@ function App() {
       <TextArea text={text} />
 
       <div>
-        <Input inputTextRef={inputTextRef} />
-        <Button inputTextRef={inputTextRef} setText={setText} />
+        <Input InputTextRef={inputTextRef} />
+        <Button InputTextRef={inputTextRef} setText={setText} />
       </div>
     </div>
   );

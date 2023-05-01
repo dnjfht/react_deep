@@ -7,10 +7,6 @@ const BoxWrap = styled.div`
   background-color: yellow;
 `;
 
-export default function SquareBox({ value }) {
-  return (
-    <BoxWrap>
-      <h1>{value}</h1>
-    </BoxWrap>
-  );
+export default function SquareBox() {
+  return <BoxWrap></BoxWrap>;
 }

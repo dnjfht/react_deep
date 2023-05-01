@@ -8,9 +8,5 @@ const BoxWrap = styled.div`
 `;
 
 export default function SquareBox({ value }) {
-  return (
-    <BoxWrap>
-      <h1>{value}</h1>
-    </BoxWrap>
-  );
+  return <BoxWrap></BoxWrap>;
 }

@@ -9,5 +9,5 @@ const Input = styled.input`
 `;
 
 export default function TextInput({ InputTextRef }) {
-  return <Input ref={InputTextRef} />;
+  return <Input />;
 }

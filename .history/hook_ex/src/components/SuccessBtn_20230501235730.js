@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Input = styled.input`
+const Btn = styled.button`
   width: 100%;
   height: 40px;
   padding: 10px;
   box-sizing: border-box;
 `;
 
-export default function TextInput({ InputTextRef }) {
-  return <Input ref={InputTextRef} />;
+export default function SuccessBtn() {
+  return <Btn>Success</Btn>;
 }

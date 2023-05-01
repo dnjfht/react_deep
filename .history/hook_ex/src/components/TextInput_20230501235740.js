@@ -8,6 +8,6 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
-export default function TextInput({ InputTextRef }) {
-  return <Input ref={InputTextRef} />;
+export default function TextInput() {
+  return <Input />;
 }

@@ -4,15 +4,15 @@ import { Button, Input, TextArea } from "./components/component";
 function App() {
   const [text, setText] = useState("");
 
-  const inputTextRef = useRef(null);
+  const InputTextRef = useRef(null);
 
   return (
     <div>
       <TextArea text={text} />
 
       <div>
-        <Input inputTextRef={inputTextRef} />
-        <Button inputTextRef={inputTextRef} setText={setText} />
+        <Input InputTextRef={InputTextRef} />
+        <Button InputTextRef={InputTextRef} setText={setText} />
       </div>
     </div>
   );
