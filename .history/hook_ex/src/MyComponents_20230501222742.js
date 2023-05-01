@@ -14,7 +14,7 @@ export default function MyComponents() {
     console.log("나 여기 있어!");
 
     return () => {
-      // 화면에서 사라질 때 실행해줄 것.
+      // 화면에서 사라질 때
     };
   }, []);
 
