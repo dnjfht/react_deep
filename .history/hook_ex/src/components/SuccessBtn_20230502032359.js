@@ -15,15 +15,9 @@ const Btn = styled.button`
 
   transition: all 0.5s;
 
-  outline: none;
-
   &:hover {
     background-color: white;
-    border: 3px solid #666;
-
-    color: black;
-
-    outline: none;
+    border: 1px solid #ccc;
   }
 `;
 

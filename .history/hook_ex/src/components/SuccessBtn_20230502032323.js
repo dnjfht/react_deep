@@ -11,20 +11,7 @@ const Btn = styled.button`
   box-sizing: border-box;
 
   color: white;
-  font-size: 1rem;
-
-  transition: all 0.5s;
-
-  outline: none;
-
-  &:hover {
-    background-color: white;
-    border: 3px solid #666;
-
-    color: black;
-
-    outline: none;
-  }
+  font-size: 0.8rem;
 `;
 
 export default function SuccessBtn({ setText, inputTextRef }) {

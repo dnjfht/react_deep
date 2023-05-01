@@ -8,20 +8,11 @@ import styled from "styled-components";
 const Wrap = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 40px;
-  box-sizing: border-box;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
-
-const InputWrap = styled.div`
-  width: 30%;
-  height: 100%;
-  padding: 60px;
-  box-sizing: border-box;
 `;
 
 function App() {
@@ -33,10 +24,10 @@ function App() {
     <Wrap>
       <SquareBox text={text} />
 
-      <InputWrap>
+      <div>
         <TextInput inputTextRef={inputTextRef} />
         <SuccessBtn inputTextRef={inputTextRef} setText={setText} />
-      </InputWrap>
+      </div>
     </Wrap>
   );
 }

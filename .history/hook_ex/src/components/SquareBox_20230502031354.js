@@ -4,17 +4,13 @@ import styled from "styled-components";
 const BoxWrap = styled.div`
   width: 70%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-
-  padding: 60px;
-  box-sizing: border-box;
-  border-radius: 10px;
+  background-color: yellow;
 `;
 
 export default function SquareBox({ text }) {
   return (
     <BoxWrap>
-      <h1 style={{ margin: 0, color: "white" }}>{text}</h1>
+      <h1>{text}</h1>
     </BoxWrap>
   );
 }

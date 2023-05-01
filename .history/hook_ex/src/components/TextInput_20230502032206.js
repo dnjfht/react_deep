@@ -6,14 +6,8 @@ const Input = styled.input`
   height: 60px;
   padding: 10px;
   box-sizing: border-box;
-
-  font-size: 1rem;
-
-  &::placeholder {
-    color: #ccc;
-  }
 `;
 
 export default function TextInput({ inputTextRef }) {
-  return <Input ref={inputTextRef} placeholder="Write text..." />;
+  return <Input ref={inputTextRef} />;
 }

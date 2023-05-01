@@ -22,8 +22,6 @@ const Btn = styled.button`
     border: 3px solid #666;
 
     color: black;
-
-    outline: none;
   }
 `;
 

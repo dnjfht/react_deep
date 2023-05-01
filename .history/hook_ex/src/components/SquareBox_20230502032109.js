@@ -8,13 +8,14 @@ const BoxWrap = styled.div`
 
   padding: 60px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
   border-radius: 10px;
 `;
 
 export default function SquareBox({ text }) {
   return (
     <BoxWrap>
-      <h1 style={{ margin: 0, color: "white" }}>{text}</h1>
+      <h1 style={{ margin: 0 }}>{text}</h1>
     </BoxWrap>
   );
 }

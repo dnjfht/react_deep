@@ -15,15 +15,13 @@ const Btn = styled.button`
 
   transition: all 0.5s;
 
-  outline: none;
+  outline::-moz-focus-inner;
 
   &:hover {
     background-color: white;
     border: 3px solid #666;
 
     color: black;
-
-    outline: none;
   }
 `;
 
