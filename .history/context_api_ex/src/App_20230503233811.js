@@ -8,7 +8,7 @@ const MyStore = createContext();
 
 function App() {
   // Context의 Value는 App 컴포넌트에서 관리
-  const [name, setName] = useState("승민");
+  const { name, setName } = useState("승민");
   return (
     <div className="App">
       <MyStore.Provider value={{ name, setName }}>

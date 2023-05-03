@@ -3,12 +3,13 @@ import "./App.css";
 import { useContext } from "react";
 import { useState } from "react";
 
-// ContextAPI()를 사용하려면 데이터를 저장해줄 공간부터 만들어야 함.
+{
+  /* ContextAPI()를 사용하려면 데이터를 저장해줄 공간부터 만들어야 함. */
+}
 const MyStore = createContext();
 
 function App() {
-  // Context의 Value는 App 컴포넌트에서 관리
-  const [name, setName] = useState("승민");
+  const { name, setName } = useState("승민");
   return (
     <div className="App">
       <MyStore.Provider value={{ name, setName }}>
@@ -27,7 +28,9 @@ function App() {
 }
 
 const MyStoreConsumer = () => {
-  // 어떤 store에 있는 어떤 데이터를 구독해서 받아올 거임.
+  {
+    /*어떤 store에 있는 어떤 데이터를 구독해서 받아올 거임.*/
+  }
   const { name, setName } = useContext(MyStore);
 
   return (
