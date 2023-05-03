@@ -47,25 +47,17 @@ const App = () => {
   // promise1();
   // Promise {<pending>}
 
-  promise1()
-    .then(
-      (res) => {
-        console.log(res);
-      },
-      (error) => {
-        console.log(error);
-      }
-    )
-    .catch((error) => {
+  promise1().then(
+    (res) => {
+      console.log(res);
+    },
+    (error) => {
       console.log(error);
-    });
-
+    }
+  );
   // 나 여깄어!
   // .then의 첫 번째 인자는 성공시 실행
   // .then의 두 번째 인자는 실패시 실행
-
-  // .catch 역시 실패시 error를 처리할 때 사용.
-  // .then의 두 번째 안자와 .catch는 같은 역할을 함.
 
   return (
     <Wrap>
