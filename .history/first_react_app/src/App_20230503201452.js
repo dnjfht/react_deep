@@ -11,7 +11,6 @@ const App = () => {
   console.log("");
   window.alert("쨘");
   console.log("3");
-
   return (
     <Wrap>
       <One />
