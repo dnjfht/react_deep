@@ -23,8 +23,7 @@ const App = () => {
     resolve("나 성공했어!");
   });
 
-  console.log(a);
-  // Promise {<fulfilled>: '나 성공했어!'}
+  a;
 
   return (
     <Wrap>

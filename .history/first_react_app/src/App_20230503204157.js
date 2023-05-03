@@ -24,7 +24,6 @@ const App = () => {
   });
 
   console.log(a);
-  // Promise {<fulfilled>: '나 성공했어!'}
 
   return (
     <Wrap>
