@@ -9,15 +9,12 @@ function App() {
   return (
     <div className="App">
       <MyStore.Provider value={{ name: "mean0" }}>
-        {/* <MyStore.Consumer>
-          // 데이터 구독. value를 사용해서 저장소에 저장되어 있는 데이터를 받아올 수 있음.
+        <MyStore.Consumer>
+          {/* 데이터 구독. value를 사용해서 저장소에 저장되어 있는 데이터를 받아올 수 있음. */}
           {(value) => {
             return <div>{value.name}</div>;
           }}
-        </MyStore.Consumer> */}
-
-        {/* useContext hook을 사용한다면 Consumer를 사용할 필요가 없음. */}
-        <MyStoreConsumer />
+        </MyStore.Consumer>
       </MyStore.Provider>
     </div>
   );
