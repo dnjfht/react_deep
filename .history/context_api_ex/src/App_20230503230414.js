@@ -9,10 +9,8 @@ function App() {
     <div className="App">
       <MyStore.Provider value={{ name: "mean0" }}>
         <MyStore.Consumer>
-          {/* 데이터 구독. value를 사용해서 저장소에 저장되어 있는 데이터를 받아올 수 있음. */}
-          {(value) => {
-            return <div>{value.name}</div>;
-          }}
+          // 데이터 구독 // 저장소에 저장되어 있는 데이터를 받아올 수 있음.
+          {value}
         </MyStore.Consumer>
       </MyStore.Provider>
     </div>
