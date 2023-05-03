@@ -72,17 +72,6 @@ const App = () => {
   };
 
   console.log(d());
-  // Promise {<fulfilled>: 1111111}
-  // Promise를 반환함
-
-  const e = async () => {
-    let f = await d();
-    console.log(f);
-  };
-
-  console.log(e());
-  // Promise {<pending>}
-  // 1111111
 
   return (
     <Wrap>

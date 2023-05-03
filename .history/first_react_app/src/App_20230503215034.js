@@ -82,7 +82,7 @@ const App = () => {
 
   console.log(e());
   // Promise {<pending>}
-  // 1111111
+  //  1111111
 
   return (
     <Wrap>

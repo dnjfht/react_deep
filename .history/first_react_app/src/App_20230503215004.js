@@ -81,8 +81,7 @@ const App = () => {
   };
 
   console.log(e());
-  // Promise {<pending>}
-  // 1111111
+  // 2App.js:80 1111111
 
   return (
     <Wrap>
