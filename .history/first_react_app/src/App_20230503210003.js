@@ -19,16 +19,16 @@ const App = () => {
   // console.log(111111111);
   // 111111111이 먼저 console에 뜨고 그 다음 "쨘!"이 창에 뜸.
 
-  // let a = new Promise((resolve, reject) => {
-  //   resolve({ status: true });
-  // });
+  let a = new Promise((resolve, reject) => {
+    resolve({ status: true });
+  });
 
   // console.log(a);
   // Promise {<fulfilled>: {status:true}}
 
-  // let b = new Promise((resolve, reject) => {
-  //   reject("실패했어 ㅜㅜ");
-  // });
+  let b = new Promise((resolve, reject) => {
+    reject("실패했어 ㅜㅜ");
+  });
 
   // console.log(b);
   // Uncaught (in promise) 실패했어 ㅜㅜ
@@ -45,7 +45,6 @@ const App = () => {
   };
 
   promise1();
-  // Promise {<pending>}
 
   return (
     <Wrap>

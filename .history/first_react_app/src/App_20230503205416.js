@@ -19,33 +19,32 @@ const App = () => {
   // console.log(111111111);
   // 111111111이 먼저 console에 뜨고 그 다음 "쨘!"이 창에 뜸.
 
-  // let a = new Promise((resolve, reject) => {
-  //   resolve({ status: true });
-  // });
+  let a = new Promise((resolve, reject) => {
+    resolve({ status: true });
+  });
 
-  // console.log(a);
+  console.log(a);
   // Promise {<fulfilled>: {status:true}}
 
-  // let b = new Promise((resolve, reject) => {
-  //   reject("실패했어 ㅜㅜ");
-  // });
+  a = new Promise((resolve, reject) => {
+    reject("실패했어 ㅜㅜ");
+  });
 
-  // console.log(b);
+  a();
   // Uncaught (in promise) 실패했어 ㅜㅜ
   // Promise {<rejected>: "실패했어 ㅜㅜ"}
   // error가 뜨게 됨.
 
   const promise1 = () => {
-    let c = new Promise((resolve, reject) => {
+    let a = new Promise((resolve, reject) => {
       window.setTimeout(() => {
         resolve("나 여깄어!");
       }, 3000);
     });
-    return c;
+    return a;
   };
 
   promise1();
-  // Promise {<pending>}
 
   return (
     <Wrap>

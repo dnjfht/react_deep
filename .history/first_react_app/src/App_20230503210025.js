@@ -45,7 +45,6 @@ const App = () => {
   };
 
   promise1();
-  // Promise {<pending>}
 
   return (
     <Wrap>
