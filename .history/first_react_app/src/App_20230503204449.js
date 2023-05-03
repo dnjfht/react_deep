@@ -31,8 +31,7 @@ const App = () => {
   });
 
   console.log(a);
-  // Uncaught (in promise) 실패했어 ㅜㅜ
-  // error가 뜨게 됨.
+  // Promise {<fulfilled>: {status:true}}
 
   return (
     <Wrap>
