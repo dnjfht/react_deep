@@ -1,18 +1,15 @@
 import { useSelector, useDispatch } from "react-redux";
-import { changeName } from "./redux/modules/cat";
 
 function App() {
-  const catName = useSelector((state) => state.cat.name);
-  console.log(catName);
-
-  const dispatch = useDispatch();
+  const cat = useSelector((state) => state.cat);
+  console.log(cat);
 
   return (
     <div>
-      <p>{catName}</p>
+      <p>name::::</p>
       <button
         onClick={() => {
-          dispatch(changeName("perl"));
+          useDispatch(changeName("perl"));
         }}
       >
         이름 바꾸기

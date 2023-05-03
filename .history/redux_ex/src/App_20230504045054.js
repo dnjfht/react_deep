@@ -1,15 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
-import { changeName } from "./redux/modules/cat";
 
 function App() {
-  const catName = useSelector((state) => state.cat.name);
-  console.log(catName);
+  const cat = useSelector((state) => state.cat);
+  console.log(cat);
 
-  const dispatch = useDispatch();
+  const useDispatch = dispatch;
 
   return (
     <div>
-      <p>{catName}</p>
+      <p>name::::</p>
       <button
         onClick={() => {
           dispatch(changeName("perl"));
