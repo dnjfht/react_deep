@@ -99,9 +99,9 @@ export default function Home() {
         {TIL.map((t, index) => {
           return (
             <ContentWrap key={index}>
-              <h1 style={{ color: "#444" }}>{t.subject}</h1>
-              <p style={{ fontSize: "1.1rem", color: "#555" }}>{t.content}</p>
-              <p style={{ color: "#888" }}>time : {t.time}</p>
+              <h1>{t.subject}</h1>
+              <p style={{ fontSize: "1.2rem", color: "#666" }}>{t.content}</p>
+              <p style={{ color: "#888" }}>{t.time}</p>
             </ContentWrap>
           );
         })}
