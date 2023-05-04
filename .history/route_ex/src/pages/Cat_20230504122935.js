@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 export default function Cat() {
   const navigate = useNavigate();
   const params = useParams();
-  console.log(params);
 
   return (
     <div style={{ textAlign: "center" }}>
