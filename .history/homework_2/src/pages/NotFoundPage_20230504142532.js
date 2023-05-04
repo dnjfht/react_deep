@@ -23,6 +23,8 @@ const TitleWrap = styled.div`
 `;
 
 const Title = styled.h1`
+  margin: 0;
+
   font-size: 3.2rem;
 `;
 
@@ -35,7 +37,6 @@ const GoHomeButton = styled.button`
   height: 50px;
   background-color: rgba(255, 255, 255, 0.6);
 
-  margin-bottom: 60px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 6px;

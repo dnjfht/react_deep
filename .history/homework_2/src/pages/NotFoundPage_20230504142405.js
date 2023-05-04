@@ -15,11 +15,8 @@ const Wrap = styled.div`
 `;
 
 const TitleWrap = styled.div`
-  width: 100%;
-
   display: flex;
   flex-direction: column;
-  justify-content: start;
 `;
 
 const Title = styled.h1`

@@ -7,19 +7,11 @@ const Wrap = styled.div`
   height: 100%;
 
   text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 `;
 
 const TitleWrap = styled.div`
-  width: 100%;
-
   display: flex;
   flex-direction: column;
-  justify-content: start;
 `;
 
 const Title = styled.h1`
@@ -35,7 +27,7 @@ const GoHomeButton = styled.button`
   height: 50px;
   background-color: rgba(255, 255, 255, 0.6);
 
-  margin-bottom: 60px;
+  margin-top: 20px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 6px;

@@ -7,19 +7,11 @@ const Wrap = styled.div`
   height: 100%;
 
   text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 `;
 
 const TitleWrap = styled.div`
-  width: 100%;
-
   display: flex;
   flex-direction: column;
-  justify-content: start;
 `;
 
 const Title = styled.h1`
@@ -30,31 +22,7 @@ const SubTitle = styled.p`
   font-size: 1.2rem;
 `;
 
-const GoHomeButton = styled.button`
-  width: 100%;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.6);
-
-  margin-bottom: 60px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: none;
-
-  color: #567dab;
-
-  outline: none;
-
-  transition: all 0.5s;
-
-  &:hover {
-    background-color: transparent;
-
-    border: 3px solid white;
-
-    color: white;
-  }
-`;
+const GoHomeButton = styled.button``;
 
 export default function NotFoundPage() {
   const navigate = useNavigate();

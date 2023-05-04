@@ -23,6 +23,8 @@ const TitleWrap = styled.div`
 `;
 
 const Title = styled.h1`
+  margin: 0;
+
   font-size: 3.2rem;
 `;
 
