@@ -1,0 +1,16 @@
+{
+  "sleep-times": [
+    {
+      "day": "월",
+      "sleep-time": "10:00"
+    },
+    {
+      "day": "화",
+      "sleep-time": "10:00"
+    },
+    {
+      "day": "수",
+      "sleep-time": "10:00"
+    }
+  ]
+}
