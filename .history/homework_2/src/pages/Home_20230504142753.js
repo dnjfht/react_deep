@@ -48,8 +48,6 @@ const AddContent = styled.div`
   width: 100%;
   height: 480px;
 
-  padding: 30px;
-  box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 10px;
 
@@ -68,11 +66,11 @@ const AddContent = styled.div`
 `;
 
 const ContentWrap = styled.div`
-  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 70px;
 
-  margin-bottom: 24px;
   padding: 10px;
-  border-radius: 6px;
+  box-sizing: border-box;
 `;
 
 export default function Home() {
@@ -98,11 +96,11 @@ export default function Home() {
       <AddContent>
         {TIL.map((t, index) => {
           return (
-            <ContentWrap key={index}>
+            <div key={index}>
               <h1>{t.subject}</h1>
               <p>{t.content}</p>
               <p>{t.time}</p>
-            </ContentWrap>
+            </div>
           );
         })}
       </AddContent>

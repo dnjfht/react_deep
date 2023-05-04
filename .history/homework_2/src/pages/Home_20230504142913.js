@@ -48,8 +48,6 @@ const AddContent = styled.div`
   width: 100%;
   height: 480px;
 
-  padding: 30px;
-  box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 10px;
 
@@ -72,7 +70,6 @@ const ContentWrap = styled.div`
 
   margin-bottom: 24px;
   padding: 10px;
-  border-radius: 6px;
 `;
 
 export default function Home() {
