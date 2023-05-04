@@ -11,9 +11,9 @@ const Wrap = styled.div`
 
 const TitleWrap = styled.div`
   width: 100%;
+  height: 100px;
 
-  margin-bottom: 40px;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
 
   display: flex;
   flex-direction: row;
@@ -22,44 +22,7 @@ const TitleWrap = styled.div`
 `;
 
 const TILTitle = styled.h1``;
-const GoWriteButton = styled.button`
-  width: 50px;
-  height: 50px;
-  background-color: white;
-
-  border: none;
-  border-radius: 100px;
-
-  color: #567dab;
-
-  transition: all 0.5s;
-
-  &:hover {
-    background-color: transparent;
-
-    border: 3px solid white;
-
-    color: white;
-  }
-`;
-
-const AddContent = styled.div`
-  width: 100%;
-  height: 480px;
-
-  overflow: scroll;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 6px;
-  }
-`;
+const GoWriteButton = styled.button``;
 
 export default function Home() {
   const navigate = useNavigate();
@@ -77,8 +40,6 @@ export default function Home() {
           추가
         </GoWriteButton>
       </TitleWrap>
-
-      <AddContent></AddContent>
     </Wrap>
   );
 }

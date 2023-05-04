@@ -12,7 +12,6 @@ const Wrap = styled.div`
 const TitleWrap = styled.div`
   width: 100%;
 
-  margin-bottom: 40px;
   border-bottom: 1px solid #fff;
 
   display: flex;
@@ -45,20 +44,9 @@ const GoWriteButton = styled.button`
 
 const AddContent = styled.div`
   width: 100%;
-  height: 480px;
+  hight: 400px;
 
   overflow: scroll;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 6px;
-  }
 `;
 
 export default function Home() {

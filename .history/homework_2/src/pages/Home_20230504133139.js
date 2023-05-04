@@ -12,7 +12,6 @@ const Wrap = styled.div`
 const TitleWrap = styled.div`
   width: 100%;
 
-  margin-bottom: 40px;
   border-bottom: 1px solid #fff;
 
   display: flex;
@@ -45,7 +44,7 @@ const GoWriteButton = styled.button`
 
 const AddContent = styled.div`
   width: 100%;
-  height: 480px;
+  height: 520px;
 
   overflow: scroll;
 

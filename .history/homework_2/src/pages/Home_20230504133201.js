@@ -45,7 +45,7 @@ const GoWriteButton = styled.button`
 
 const AddContent = styled.div`
   width: 100%;
-  height: 480px;
+  height: 520px;
 
   overflow: scroll;
 

@@ -72,8 +72,6 @@ export default function Write() {
 
   const handleClickAddTIL = (event) => {
     event.preventDefault();
-
-    navigate("/");
   };
 
   return (
@@ -93,7 +91,13 @@ export default function Write() {
         <Input id="time" placeholder="Write time..." />
       </PersonalInputWrap>
 
-      <AddButton onClick={handleClickAddTIL}>추가하기</AddButton>
+      <AddButton
+        onClick={
+          handleClickAddTIL;
+        }
+      >
+        추가하기
+      </AddButton>
     </InputWrap>
   );
 }

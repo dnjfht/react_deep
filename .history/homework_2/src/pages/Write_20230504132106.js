@@ -72,8 +72,6 @@ export default function Write() {
 
   const handleClickAddTIL = (event) => {
     event.preventDefault();
-
-    navigate("/");
   };
 
   return (

@@ -67,14 +67,10 @@ const AddButton = styled.button`
   }
 `;
 
+const PrevButton = styled.button``;
+
 export default function Write() {
   const navigate = useNavigate();
-
-  const handleClickAddTIL = (event) => {
-    event.preventDefault();
-
-    navigate("/");
-  };
 
   return (
     <InputWrap>
@@ -93,7 +89,14 @@ export default function Write() {
         <Input id="time" placeholder="Write time..." />
       </PersonalInputWrap>
 
-      <AddButton onClick={handleClickAddTIL}>추가하기</AddButton>
+      <AddButton onClick={() => {}}>추가하기</AddButton>
+      <PrevButton
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Go Prev Page
+      </PrevButton>
     </InputWrap>
   );
 }

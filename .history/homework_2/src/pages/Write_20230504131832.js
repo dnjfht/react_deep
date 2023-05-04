@@ -67,14 +67,34 @@ const AddButton = styled.button`
   }
 `;
 
+const PrevButton = styled.button`
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: none;
+
+  color: #567dab;
+
+  outline: none;
+
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: transparent;
+
+    border: 3px solid white;
+
+    color: white;
+  }
+`;
+
 export default function Write() {
   const navigate = useNavigate();
-
-  const handleClickAddTIL = (event) => {
-    event.preventDefault();
-
-    navigate("/");
-  };
 
   return (
     <InputWrap>
@@ -93,7 +113,14 @@ export default function Write() {
         <Input id="time" placeholder="Write time..." />
       </PersonalInputWrap>
 
-      <AddButton onClick={handleClickAddTIL}>추가하기</AddButton>
+      <AddButton onClick={() => {}}>추가하기</AddButton>
+      <PrevButton
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Go Prev Page
+      </PrevButton>
     </InputWrap>
   );
 }
