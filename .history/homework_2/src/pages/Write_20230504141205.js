@@ -79,8 +79,6 @@ export default function Write() {
   const TimeInputRef = useRef(null);
 
   const handleClickAddTIL = (event) => {
-    event.preventDefault();
-
     const newTIL = {
       subject: SubjectInputRef.current.value,
       content: ContentInputRef.current.value,

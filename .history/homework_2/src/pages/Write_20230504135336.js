@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addTil } from "../redux/modules/til";
 import { useRef } from "react";
 
@@ -81,23 +81,12 @@ export default function Write() {
   const handleClickAddTIL = (event) => {
     event.preventDefault();
 
-    const newTIL = {
-      subject: SubjectInputRef.current.value,
-      content: ContentInputRef.current.value,
-      time: TimeInputRef.current.value,
-    };
+    const newTIL = {};
 
     dispatch(addTil(newTIL));
 
-    SubjectInputRef.current.value = "";
-    ContentInputRef.current.value = "";
-    TimeInputRef.current.value = "";
-
     navigate("/");
   };
-
-  const TIL = useSelector((state) => state.til);
-  console.log(TIL);
 
   return (
     <InputWrap>

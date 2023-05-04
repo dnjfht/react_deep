@@ -77,6 +77,7 @@ export default function Write() {
   const SubjectInputRef = useRef(null);
   const ContentInputRef = useRef(null);
   const TimeInputRef = useRef(null);
+  console.log(SubjectInputRef, ContentInputRef, TimeInputRef);
 
   const handleClickAddTIL = (event) => {
     event.preventDefault();
@@ -92,8 +93,6 @@ export default function Write() {
     SubjectInputRef.current.value = "";
     ContentInputRef.current.value = "";
     TimeInputRef.current.value = "";
-
-    navigate("/");
   };
 
   const TIL = useSelector((state) => state.til);

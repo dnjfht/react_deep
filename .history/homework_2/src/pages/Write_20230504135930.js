@@ -92,14 +92,12 @@ export default function Write() {
     SubjectInputRef.current.value = "";
     ContentInputRef.current.value = "";
     TimeInputRef.current.value = "";
-
-    navigate("/");
   };
 
-  const TIL = useSelector((state) => state.til);
-  console.log(TIL);
-
   return (
+
+    const TIL = useSelector((state)=>state.til);
+    
     <InputWrap>
       <PersonalInputWrap>
         <Label htmlFor="subject">과목</Label>

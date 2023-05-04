@@ -54,8 +54,8 @@ const AddContent = styled.div`
   overflow: scroll;
 
   &::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.4);
   }

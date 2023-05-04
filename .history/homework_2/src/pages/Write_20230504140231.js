@@ -88,13 +88,9 @@ export default function Write() {
     };
 
     dispatch(addTil(newTIL));
-
-    SubjectInputRef.current.value = "";
-    ContentInputRef.current.value = "";
-    TimeInputRef.current.value = "";
-
-    navigate("/");
   };
+
+  console.log(SubjectInputRef, ContentInputRef, TimeInputRef);
 
   const TIL = useSelector((state) => state.til);
   console.log(TIL);

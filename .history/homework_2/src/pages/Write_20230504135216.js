@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addTil } from "../redux/modules/til";
-import { useRef } from "react";
 
 const InputWrap = styled.div`
   width: 100%;
@@ -72,56 +71,34 @@ const AddButton = styled.button`
 
 export default function Write() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
-  const SubjectInputRef = useRef(null);
-  const ContentInputRef = useRef(null);
-  const TimeInputRef = useRef(null);
+  const dispatch = useDispatch();
 
   const handleClickAddTIL = (event) => {
     event.preventDefault();
 
-    const newTIL = {
-      subject: SubjectInputRef.current.value,
-      content: ContentInputRef.current.value,
-      time: TimeInputRef.current.value,
-    };
+    const newTIL = {};
 
     dispatch(addTil(newTIL));
 
-    SubjectInputRef.current.value = "";
-    ContentInputRef.current.value = "";
-    TimeInputRef.current.value = "";
-
     navigate("/");
   };
-
-  const TIL = useSelector((state) => state.til);
-  console.log(TIL);
 
   return (
     <InputWrap>
       <PersonalInputWrap>
         <Label htmlFor="subject">과목</Label>
-        <Input
-          ref={SubjectInputRef}
-          id="subject"
-          placeholder="Write subject..."
-        />
+        <Input id="subject" placeholder="Write subject..." />
       </PersonalInputWrap>
 
       <PersonalInputWrap>
         <Label htmlFor="content">내용</Label>
-        <Input
-          ref={ContentInputRef}
-          id="content"
-          placeholder="Write content..."
-        />
+        <Input id="content" placeholder="Write content..." />
       </PersonalInputWrap>
 
       <PersonalInputWrap>
         <Label htmlFor="time">공부시간</Label>
-        <Input ref={TimeInputRef} id="time" placeholder="Write time..." />
+        <Input id="time" placeholder="Write time..." />
       </PersonalInputWrap>
 
       <AddButton onClick={handleClickAddTIL}>추가하기</AddButton>

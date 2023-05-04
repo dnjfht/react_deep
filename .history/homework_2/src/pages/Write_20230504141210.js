@@ -79,8 +79,6 @@ export default function Write() {
   const TimeInputRef = useRef(null);
 
   const handleClickAddTIL = (event) => {
-    event.preventDefault();
-
     const newTIL = {
       subject: SubjectInputRef.current.value,
       content: ContentInputRef.current.value,
@@ -93,7 +91,7 @@ export default function Write() {
     ContentInputRef.current.value = "";
     TimeInputRef.current.value = "";
 
-    navigate("/");
+    // navigate("/");
   };
 
   const TIL = useSelector((state) => state.til);

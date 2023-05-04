@@ -92,12 +92,9 @@ export default function Write() {
     SubjectInputRef.current.value = "";
     ContentInputRef.current.value = "";
     TimeInputRef.current.value = "";
-
-    navigate("/");
   };
 
   const TIL = useSelector((state) => state.til);
-  console.log(TIL);
 
   return (
     <InputWrap>
