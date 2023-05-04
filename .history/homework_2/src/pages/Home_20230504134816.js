@@ -87,8 +87,6 @@ export default function Home() {
           return (
             <div key={index}>
               <h1>{t.subject}</h1>
-              <p>{t.content}</p>
-              <p>{t.time}</p>
             </div>
           );
         })}

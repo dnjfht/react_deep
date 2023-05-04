@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector } from "redux";
 
 const Wrap = styled.div`
   width: 100%;
@@ -82,17 +82,7 @@ export default function Home() {
         </GoWriteButton>
       </TitleWrap>
 
-      <AddContent>
-        {TIL.map((t, index) => {
-          return (
-            <div key={index}>
-              <h1>{t.subject}</h1>
-              <p>{t.content}</p>
-              <p>{t.time}</p>
-            </div>
-          );
-        })}
-      </AddContent>
+      <AddContent></AddContent>
     </Wrap>
   );
 }

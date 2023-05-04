@@ -66,7 +66,6 @@ export default function Home() {
   const navigate = useNavigate();
 
   const TIL = useSelector((state) => state.til);
-  console.log(TIL);
 
   return (
     <Wrap>
@@ -82,17 +81,7 @@ export default function Home() {
         </GoWriteButton>
       </TitleWrap>
 
-      <AddContent>
-        {TIL.map((t, index) => {
-          return (
-            <div key={index}>
-              <h1>{t.subject}</h1>
-              <p>{t.content}</p>
-              <p>{t.time}</p>
-            </div>
-          );
-        })}
-      </AddContent>
+      <AddContent></AddContent>
     </Wrap>
   );
 }

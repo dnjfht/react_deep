@@ -82,17 +82,13 @@ export default function Home() {
         </GoWriteButton>
       </TitleWrap>
 
-      <AddContent>
-        {TIL.map((t, index) => {
-          return (
-            <div key={index}>
-              <h1>{t.subject}</h1>
-              <p>{t.content}</p>
-              <p>{t.time}</p>
-            </div>
-          );
-        })}
-      </AddContent>
+      {TIL.map((t, index) => {
+        return (
+          <AddContent key={index}>
+            <h1>{t.subject}</h1>
+          </AddContent>
+        );
+      })}
     </Wrap>
   );
 }
