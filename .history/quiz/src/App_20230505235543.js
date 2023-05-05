@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import axios from "axios";
 
 function App() {
@@ -6,9 +7,6 @@ function App() {
       headers: { "Content-Type": "application/json" },
     });
     console.log(response);
-    const data = await response.json();
-
-    return data;
   };
 
   const callSomethingAxios = () => {

@@ -5,7 +5,6 @@ function App() {
     let response = await fetch("http://localhost:5001/ping", {
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
     const data = await response.json();
 
     return data;
