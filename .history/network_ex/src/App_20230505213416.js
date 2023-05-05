@@ -50,8 +50,7 @@ function App() {
   // fetch()
   useEffect(() => {
     // get 요청 보내기
-    const response = fetch("http://localhost:5001/sleep-times");
-    console.log(response);
+    fetch("http://localhost:5001/sleep-times");
   }, []);
 
   return <div></div>;
