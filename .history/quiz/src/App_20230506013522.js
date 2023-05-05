@@ -8,7 +8,7 @@ function App() {
     console.log(response);
     const data = await response.json();
 
-    window.alert(data.answer);
+    console.log(data);
   };
 
   const callSomethingAxios = () => {

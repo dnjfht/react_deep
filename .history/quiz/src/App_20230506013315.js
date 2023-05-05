@@ -6,9 +6,9 @@ function App() {
       headers: { "Content-Type": "application/json" },
     });
     console.log(response);
-    const data = await response.json();
+    //const data = await response.json();
 
-    window.alert(data.answer);
+    window.alert(response.data.answer);
   };
 
   const callSomethingAxios = () => {
