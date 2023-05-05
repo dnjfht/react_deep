@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import axios from "axios";
+import { axios } from "axios";
 
 function App() {
   // useEffect(() => {
@@ -99,8 +99,6 @@ function App() {
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
     // post 요청 :
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 201, ok: true, …}
-
-    callSomethingAxios();
   }, []);
 
   return <div></div>;

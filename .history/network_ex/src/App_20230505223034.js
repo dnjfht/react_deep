@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import axios from "axios";
+import { axios } from "axios";
 
 function App() {
   // useEffect(() => {
@@ -80,14 +80,6 @@ function App() {
   const callSomethingAxios = () => {
     // 방법 1
     // axios({}); => 모든걸 옵션으로 넣는 방법
-
-    axios({
-      method: "get",
-      url: "http://localhost:5001/sleep-times",
-    }).then((response) => {
-      console.log(response);
-    });
-
     // 방법 2
     // axios.get();
     // axios.post();
@@ -99,8 +91,6 @@ function App() {
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
     // post 요청 :
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 201, ok: true, …}
-
-    callSomethingAxios();
   }, []);
 
   return <div></div>;
