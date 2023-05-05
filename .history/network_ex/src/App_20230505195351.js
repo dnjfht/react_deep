@@ -32,19 +32,7 @@ function App() {
      * 4
      */
 
-    xhr.onreadystatechange = function () {
-      // console.log(xhr.readyState);
-
-      if (xhr.readyState === 4) {
-        console.log(xhr.responseText);
-        // 서버한테 응답을 받았다면 데이터 가져오기
-      }
-    };
-
-    // onload : 완벽하게 서버에게서 응답을 받아왔을 때만 사용할 수 있음.
-    xhr.onload = function () {
-      console.log(xhr.responseText);
-    };
+    xhr.onreadystatechange = function () {};
   }, []);
   return <div></div>;
 }

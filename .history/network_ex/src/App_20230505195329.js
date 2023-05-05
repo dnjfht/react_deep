@@ -25,26 +25,13 @@ function App() {
     // XMLHttpRequest.readyState 프로퍼티가 변경이 될 때마다 콜백함수를 호출해줌.
     // readyState : XMLHttpRequest의 상태를 반환해줌.
     /**
-     * 0
-     * 1
-     * 2
-     * 3
-     * 4
+     * 0 :
+     * 1 :
+     * 2 :
+     * 3 :
      */
 
-    xhr.onreadystatechange = function () {
-      // console.log(xhr.readyState);
-
-      if (xhr.readyState === 4) {
-        console.log(xhr.responseText);
-        // 서버한테 응답을 받았다면 데이터 가져오기
-      }
-    };
-
-    // onload : 완벽하게 서버에게서 응답을 받아왔을 때만 사용할 수 있음.
-    xhr.onload = function () {
-      console.log(xhr.responseText);
-    };
+    xhr.onreadystatechange = function () {};
   }, []);
   return <div></div>;
 }
