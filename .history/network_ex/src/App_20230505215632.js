@@ -65,24 +65,20 @@ function App() {
       },
       // json으로 보내줄 거라고 명시를 해뒀기 때문에 JSON.stringify(data);
       // JSON.stringify() => JavaScript 값이나 객체를 JSON 문자열로 변환
-      body: JSON.stringify(data),
+      body: data,
     });
 
     // get 요청 보내기
     const responseGet = await fetch("http://localhost:5001/sleep-times");
     console.log(responseGet);
     // Promise {<pending>}
+
     console.log(responsePost);
-    // Promise {<pending>}
   };
 
   useEffect(() => {
     callSomething();
-    // get 요청 :
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
-
-    // post 요청 :
-    // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 201, ok: true, …}
   }, []);
 
   return <div></div>;

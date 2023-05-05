@@ -72,6 +72,7 @@ function App() {
     const responseGet = await fetch("http://localhost:5001/sleep-times");
     console.log(responseGet);
     // Promise {<pending>}
+
     console.log(responsePost);
     // Promise {<pending>}
   };

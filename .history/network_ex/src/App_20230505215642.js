@@ -72,17 +72,13 @@ function App() {
     const responseGet = await fetch("http://localhost:5001/sleep-times");
     console.log(responseGet);
     // Promise {<pending>}
+
     console.log(responsePost);
-    // Promise {<pending>}
   };
 
   useEffect(() => {
     callSomething();
-    // get 요청 :
     // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
-
-    // post 요청 :
-    // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 201, ok: true, …}
   }, []);
 
   return <div></div>;
