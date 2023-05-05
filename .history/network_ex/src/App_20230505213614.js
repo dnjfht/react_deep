@@ -48,18 +48,11 @@ function App() {
   // }, []);
 
   // fetch()
-
-  // promise 값을 보고 싶을 때 async...await
-  const callSomething = async () => {
+  useEffect(() => {
     // get 요청 보내기
-    const response = await fetch("http://localhost:5001/sleep-times");
+    const response = fetch("http://localhost:5001/sleep-times");
     console.log(response);
     // Promise {<pending>}
-  };
-
-  useEffect(() => {
-    callSomething();
-    // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
   }, []);
 
   return <div></div>;

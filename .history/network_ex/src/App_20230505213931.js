@@ -59,7 +59,6 @@ function App() {
 
   useEffect(() => {
     callSomething();
-    // Response {type: 'cors', url: 'http://localhost:5001/sleep-times', redirected: false, status: 200, ok: true, …}
   }, []);
 
   return <div></div>;
