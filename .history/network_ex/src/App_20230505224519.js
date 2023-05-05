@@ -92,18 +92,12 @@ function App() {
     // axios.get();
     // axios.post();
 
-    axios
-      .get("http://localhost:5001/sleep-times")
-      .then((response) => console.log(response));
+    axios.get("http://localhost:5001/sleep-times");
 
     let data = {
       day: "월",
       "sleep-times": "10:00",
     };
-
-    axios
-      .post("http://localhost:5001/sleep-times", data)
-      .then((response) => console.log(response));
   };
 
   useEffect(() => {

@@ -101,9 +101,7 @@ function App() {
       "sleep-times": "10:00",
     };
 
-    axios
-      .post("http://localhost:5001/sleep-times", data)
-      .then((response) => console.log(response));
+    axios.post("http://localhost:5001/sleep-times", data);
   };
 
   useEffect(() => {
