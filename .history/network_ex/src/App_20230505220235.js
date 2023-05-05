@@ -69,10 +69,10 @@ function App() {
     });
 
     // get 요청 보내기
-    // const responseGet = await fetch("http://localhost:5001/sleep-times");
+    const responseGet = await fetch("http://localhost:5001/sleep-times");
     // console.log(responseGet);
     // Promise {<pending>}
-    console.log(responsePost);
+    // console.log(responsePost);
     // Promise {<pending>}
   };
 
